@@ -1,3 +1,5 @@
+@import url('celstyle.css');
+
 /* Layout geral */
 body {
     font-family: Arial, sans-serif;
@@ -225,55 +227,5 @@ footer p {
 
 /* Adicionando responsividade */
 
-/* Para telas pequenas (celulares) */
-@media (max-width: 600px) {
-    body {
-        font-size: 14px; /* Diminui o tamanho da fonte */
-        padding: 10px; /* Reduz o padding do corpo */
-    }
 
-    .logo {
-        width: 80px; /* Ajusta o tamanho da logo para telas menores */
-    }
 
-    nav ul {
-        display: flex;
-        flex-direction: column; /* Muda o layout do menu para vertical */
-        align-items: center;
-    }
-
-    .membro img, .pesquisa-item img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .produto-imagem img {
-        width: 100%; /* Garante que a imagem do produto ocupe a largura completa */
-        max-width: 300px; /* Ajusta o tamanho máximo da imagem no celular */
-    }
-
-    .map-container iframe {
-        height: 300px; /* Reduz a altura do mapa para dispositivos menores */
-    }
-}
-
-/* Para telas médias (tablets) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    body {
-        font-size: 16px;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    .membro img, .pesquisa-item img {
-        width: 100px;
-        height: 100px;
-    }
-
-    nav ul {
-        flex-direction: row;
-        justify-content: space-around; /* Mantém o menu na horizontal */
-    }
-}
