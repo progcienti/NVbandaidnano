@@ -36,6 +36,20 @@
         font-size: 1em; /* Ajusta o tamanho da fonte do endereço */
     }
 }
+@media (max-width: 767px) {
+    .localizacao-section {
+        padding: 20px;
+    }
+
+    .localizacao-section h3 {
+        font-size: 24px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
 
 /* Estilos para telas menores que 480px */
 @media (max-width: 480px) {
